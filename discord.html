@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unser Discord</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #a0e9fd, #43c6ac);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 30px;
+      color: #045f5f;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      color: #ff7f50;
+      text-shadow: 1px 1px 5px #ffe;
+    }
+
+    nav {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.4);
+      color: #2a9d8f;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #ff7f50;
+      color: #fff;
+      box-shadow: 0 0 12px #ff7f50;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.9);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    h2 {
+      color: #ff7f50;
+      margin-bottom: 10px;
+      font-size: 1.7rem;
+      text-shadow: 0 1px 3px #ffffffaa;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .discord-link-box {
+      background: #7289da;
+      color: #fff;
+      padding: 14px 20px;
+      text-align: center;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      margin: 25px 0;
+      box-shadow: 0 0 15px rgba(114,137,218,0.6);
+    }
+
+    .discord-link-box a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 25px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #f8f8f8;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>☀️ Unser Discord & Infos</h1>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="regeln.html">Regeln</a>
+      <a href="angebote.html">Angebote</a>
+      <a href="preise.html">Preise</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="discord.html" class="active">Discord</a>
+      <a href="team.html">Team</a>
+      <a href="infos.html">Infos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>🔗 Discord Link</h2>
+      <div class="discord-link-box">
+        Tritt jetzt bei:  
+        <a href="https://discord.gg/DEINLINK" target="_blank">discord.gg/DEINLINK</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>👋 Über uns</h2>
+      <p>
+        Wir sind ein kreatives Team mit Fokus auf RP-Server, Scripts und Community-Building.  
+        Unsere Leidenschaft ist es, dir und deinem Server das beste Erlebnis zu bieten – mit Tools, Ideen und Support!
+      </p>
+    </section>
+
+    <section>
+      <h2>🎯 Warum solltest du unserem Discord beitreten?</h2>
+      <ul>
+        <li>✅ Schneller Support via Ticket-System</li>
+        <li>📦 Direkter Zugang zu Scripts & Updates</li>
+        <li>🎁 Exklusive Giveaways & Events</li>
+        <li>📢 Dev-Ankündigungen & Changelogs</li>
+        <li>💬 Feedback geben & mitgestalten</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎫 Ticket-System</h2>
+      <p>
+        Für Käufe, Fragen oder Hilfe: Öffne ein Ticket auf unserem Discord über den Channel <strong>#ticket-öffnen</strong>.
+        Unser Team hilft dir schnell & freundlich weiter!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 DeinServerName — Sonne, Scripts & Support 🌴💧
+  </footer>
+</body>
+</html>

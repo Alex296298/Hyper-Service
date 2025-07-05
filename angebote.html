@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angebote</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #a0e9fd, #43c6ac);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 30px;
+      color: #045f5f;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      color: #ff7f50;
+      text-shadow: 1px 1px 5px #ffffff;
+    }
+
+    nav {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.4);
+      color: #2a9d8f;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #ff7f50;
+      color: #fff;
+      box-shadow: 0 0 12px #ff7f50;
+    }
+
+    .angebote-container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .angebot-box {
+      background: rgba(255,255,255,0.9);
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .angebot-box:hover {
+      transform: scale(1.04);
+    }
+
+    .title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #025959;
+      margin-bottom: 8px;
+    }
+
+    .preis {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .preis .alt {
+      text-decoration: line-through;
+      color: #e74c3c;
+      margin-right: 8px;
+    }
+
+    .badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #ff7f50;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      box-shadow: 0 0 8px #ff7f50aa;
+    }
+
+    .beschreibung {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎉 Aktuelle Angebote</h1>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="regeln.html">Regeln</a>
+      <a href="angebote.html" class="active">Angebote</a>
+      <a href="preise.html">Preise</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="discord.html">Discord</a>
+      <a href="team.html">Team</a>
+      <a href="infos.html">Infos</a>
+    </nav>
+  </header>
+
+  <section class="angebote-container">
+    <div class="angebot-box">
+      <div class="badge">GRATIS</div>
+      <div class="title">📍 GPS Tracker</div>
+      <div class="preis">
+        <span class="alt">15 €</span> <strong>0 €</strong>
+      </div>
+      <div class="beschreibung">
+        Nur kostenlos in Verbindung mit dem Jail Script!  
+        Ermöglicht GPS-Tracking von Spielern – ideal für Polizei & EMS.
+      </div>
+    </div>
+
+    <div class="angebot-box">
+      <div class="badge">ANGEBOT</div>
+      <div class="title">🚨 Jail Script</div>
+      <div class="preis">
+      <span class="alt">50 €</span> <strong>25 €</strong>
+      </div>
+      <div class="beschreibung">
+        Komplettes Gefängnis System mit Zellen  Timer Funktionen Updates werden noch Kommen.
+      </div>
+    </div>
+
+    <div class="angebot-box">
+      <div class="badge">Ausverkauft</div>
+      <div class="title">⚒️ Admin Panel</div>
+      <div class="preis">
+      <span class="alt">15 €</span> <strong>5,99 €</strong>
+      </div>
+      <div class="beschreibung">
+        Ein Admin Panel mit Verscheidene sachen, Updates werden auch kommen.
+      </div>
+    </div>
+
+    <div class="angebot-box">
+      <div class="badge">BALD VERFÜGTBAR</div>
+      <div class="title">📁 Dokumentions Scripts</div>
+      <div class="preis">
+      <span class="alt">15 €</span> <strong>5 €</strong>
+      </div>
+      <div class="beschreibung">
+        Ein Dokummentions Script wo du Dokummente ausschreiben kanns, Updates werden auch Kommen.
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Hyper Service — Sommerangebote nur für kurze Zeit ☀️💧
+  </footer>
+</body>
+</html>

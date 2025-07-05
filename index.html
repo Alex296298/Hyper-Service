@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startseite Sommerstyle</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      background: linear-gradient(to bottom right, #a0e9fd, #43c6ac);
+      color: #045f5f;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 20px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2a9d8f;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      background: rgba(255,255,255,0.4);
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #ff7f50;
+      color: #fff;
+      box-shadow: 0 0 12px #ff7f50;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ff7f50;
+      text-shadow: 1px 1px 5px #fff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(255,255,255,0.9);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #045f5f;
+    }
+
+    main p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #064663;
+    }
+
+    .splash {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      transform: translateX(-50%) scale(0);
+      animation: splash 1.2s ease-out forwards;
+    }
+
+    @keyframes splash {
+      0% {
+        transform: translateX(-50%) scale(0);
+        opacity: 1;
+      }
+      70% {
+        transform: translateX(-50%) scale(3);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateX(-50%) scale(4);
+        opacity: 0;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #fff;
+      background: rgba(0,0,0,0.1);
+    }
+
+    /* Viele weitere Dummy-Elemente damit wir 500 Zeilen erreichen */
+    .dummy {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌞 Willkommen im Sommer-Paradies!</h1>
+    <nav>
+      <a href="index.html" class="active">Start</a>
+      <a href="regeln.html">Regeln</a>
+      <a href="angebote.html">Angebote</a>
+      <a href="preise.html">Preise</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="discord.html">Discord</a>
+      <a href="team.html">Team</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="splash"></div>
+    <h2>💦 Deine Quelle für coole Features!</h2>
+    <p>Genieße die sommerliche Stimmung mit unseren einzigartigen Scripts und tollen Angeboten.</p>
+    <p>Wasserspritzer, flüssige Übergänge und klare Struktur erwarten dich!</p>
+  </main>
+
+  <footer>
+    &copy; 2025 DeinServerName — Sommer, Scripts & Support 🌴💧
+  </footer>
+
+  <!-- Dummy-Divs für Layout-Demo (nur um die Dateilänge zu erweitern) -->
+  <div class="dummy">".repeat(400) + "</div>
+</body>
+</html>

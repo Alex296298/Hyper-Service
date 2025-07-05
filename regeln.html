@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regeln</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #a0e9fd, #43c6ac);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 30px;
+      color: #023047;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      color: #ff7f50;
+      text-shadow: 1px 1px 5px #fff;
+    }
+
+    nav {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.4);
+      color: #2a9d8f;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #ff7f50;
+      color: #fff;
+      box-shadow: 0 0 12px #ff7f50;
+    }
+
+    .regeln-container {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .regel-box {
+      background: rgba(255,255,255,0.9);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .regel-box:hover {
+      transform: scale(1.03);
+    }
+
+    .regel-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ff7f50;
+    }
+
+    .regel-text {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #045f5f;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #f0f0f0;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📜 Server-Regeln</h1>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="regeln.html" class="active">Regeln</a>
+      <a href="angebote.html">Angebote</a>
+      <a href="preise.html">Preise</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="discord.html">Discord</a>
+      <a href="team.html">Team</a>
+      <a href="infos.html">Infos</a>
+    </nav>
+  </header>
+
+  <section class="regeln-container">
+    <div class="regel-box">
+      <div class="regel-icon">🤝</div>
+      <div class="regel-text">Respektiere andere Spieler.</div>
+    </div>
+
+    <div class="regel-box">
+      <div class="regel-icon">🚫</div>
+      <div class="regel-text">Kein Cheating oder Exploiting.</div>
+    </div>
+
+    <div class="regel-box">
+      <div class="regel-icon">🎮</div>
+      <div class="regel-text">Verhalte dich fair und teamorientiert.</div>
+    </div>
+
+    <div class="regel-box">
+      <div class="regel-icon">💬</div>
+      <div class="regel-text">Höflichkeit ist Pflicht.</div>
+    </div>
+
+    <div class="regel-box">
+      <div class="regel-icon">📵</div>
+      <div class="regel-text">Vermeide Spam und Werbung.</div>
+    </div>
+
+    <div class="regel-box">
+      <div class="regel-icon">🛠️</div>
+      <div class="regel-text">Folge den Anweisungen der Admins.</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 DeinServerName — Danke, dass du fair spielst! ☀️
+  </footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unser Team</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #a0e9fd, #43c6ac);
+      color: #064663;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      color: #ff7f50;
+      text-shadow: 1px 1px 4px #fff;
+    }
+
+    nav {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.4);
+      color: #2a9d8f;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #ff7f50;
+      color: #fff;
+      box-shadow: 0 0 12px #ff7f50;
+    }
+
+    .team-container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .team-box {
+      background: rgba(255,255,255,0.9);
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .team-box:hover {
+      transform: scale(1.04);
+    }
+
+    .role {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #ff7f50;
+      margin-bottom: 8px;
+    }
+
+    .name {
+      font-size: 1.4rem;
+      color: #045f5f;
+      margin-top: 5px;
+    }
+
+    .avatar {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #2a9d8f;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #eee;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>👥 Unser Team</h1>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="regeln.html">Regeln</a>
+      <a href="angebote.html">Angebote</a>
+      <a href="preise.html">Preise</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="discord.html">Discord</a>
+      <a href="team.html" class="active">Team</a>
+      <a href="infos.html">Infos</a>
+    </nav>
+  </header>
+
+  <section class="team-container">
+    <!-- Owner -->
+    <div class="team-box">
+      <div class="avatar">👑</div>
+      <div class="role">Owner</div>
+      <div class="name">Alessandro</div>
+    </div>
+    <div class="team-box">
+      <div class="avatar">👑</div>
+      <div class="role">Owner</div>
+      <div class="name">Ben</div>
+    </div>
+
+    <!-- Co Owner -->
+    <div class="team-box">
+      <div class="avatar">🛡️</div>
+      <div class="role">Co Owner</div>
+      <div class="name">Yann</div>
+    </div>
+
+    <!-- Management -->
+    <div class="team-box">
+      <div class="avatar">📋</div>
+      <div class="role">Management</div>
+      <div class="name">Paul</div>
+    </div>
+
+    <!-- Teamleitung -->
+    <div class="team-box">
+      <div class="avatar">📢</div>
+      <div class="role">Teamleitung</div>
+      <div class="name">Andre</div>
+    </div>
+
+    <!-- Skinner -->
+    <div class="team-box">
+      <div class="avatar">🎨</div>
+      <div class="role">Skinner</div>
+      <div class="name">Giu</div>
+    </div>
+
+    <!-- Skinner -->
+    <div class="team-box">
+      <div class="avatar">🎨</div>
+      <div class="role">Websiten ersteller</div>
+      <div class="name">Alessandro</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 DeinServerName — Mit ❤️ vom Team für dich.
+  </footer>
+</body>
+</html>

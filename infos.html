@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infos - Sommer Style</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #87ceeb, #fefefe);
+      color: #064663;
+      margin: 0;
+      padding: 0 20px 40px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: backgroundWave 12s ease-in-out infinite;
+    }
+
+    header {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ff7f50; /* Korallenorange */
+      text-shadow: 1px 1px 4px #ffa07a;
+      animation: fadeInDown 1.5s ease forwards;
+    }
+
+    nav {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2a9d8f;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 20px;
+      background: rgba(255 127 80 / 0.15);
+      transition: background 0.3s, color 0.3s;
+      box-shadow: 0 0 8px rgba(255 127 80 / 0.3);
+    }
+
+    nav a:hover, nav a.active {
+      background: #ff7f50;
+      color: #fff;
+      box-shadow: 0 0 15px #ff7f50;
+    }
+
+    main {
+      max-width: 700px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 15px;
+      box-shadow: 0 12px 25px rgba(255, 127, 80, 0.35);
+      padding: 30px 40px;
+      animation: fadeInUp 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    main.visible {
+      opacity: 1;
+    }
+
+    h2 {
+      color: #ff7f50;
+      margin-bottom: 12px;
+      font-size: 2rem;
+      text-shadow: 0 0 6px #ff7f50aa;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #064663dd;
+    }
+
+    a.discord-link {
+      color: #7289da;
+      font-weight: 700;
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+
+    a.discord-link:hover {
+      color: #99aab5;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px 10px;
+      text-align: center;
+      color: #2a9d8fcc;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes backgroundWave {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Willkommen zu unseren Sommer-Infos!</h1>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="regeln.html">Regeln</a>
+      <a href="angebote.html">Angebote</a>
+      <a href="preise.html">Preise</a>
+      <a href="downloads.html">downloads</a>
+      <a href="infos.html" class="active">Infos</a>
+      <a href="discord.html">Discord</a>
+      <a href="team.html">Team</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section id="kontakt-info">
+      <h2>Kontakt & Discord</h2>
+      <p>
+        Werde Teil unserer Community! Trete unserem <a href="https://discord.gg/deinlink" target="_blank" rel="noopener noreferrer" class="discord-link">Discord-Server</a> bei, um Support zu erhalten, dich mit anderen auszutauschen und immer die neuesten Updates zu bekommen.
+      </p>
+      <p>
+        Wir freuen uns auf dich – bei Fragen oder Feedback erreichst du uns jederzeit über Discord.
+      </p>
+    </section>
+
+    <section id="script-info">
+      <h2>Infos zu unseren Scripts</h2>
+      <p>
+        Unsere Scripts sind mit viel Liebe und Sorgfalt entwickelt worden, damit du das beste Sommer-Feeling im Spiel hast. Sie werden regelmäßig aktualisiert und bieten dir spannende Features und coole Funktionen.
+      </p>
+      <p>
+        Hier Findest du immer neue Infgos über einen Script oder wenn ein neus kurz davor steht
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Hyper Service Sommer Vibes inklusive 🌞💧
+  </footer>
+
+  <script>
+    // Main content fade in nach Seitenladen
+    window.addEventListener('load', () => {
+      document.getElementById('content').classList.add('visible');
+    });
+  </script>
+</body>
+</html>
