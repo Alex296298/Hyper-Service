@@ -1,0 +1,35 @@
+{
+  "bot": {
+    "token": "DEIN_BOT_TOKEN_HIER",
+    "clientId": "DEINE_CLIENT_ID_HIER",
+    "prefix": "!",
+    "status": "Team Management | /help",
+    "color": {
+      "success": "#00ff00",
+      "error": "#ff0000",
+      "info": "#0099ff",
+      "warning": "#ff9900"
+    }
+  },
+  "features": {
+    "teamSystem": true,
+    "warningSystem": true,
+    "ticketSystem": true,
+    "announcementSystem": true,
+    "autoBackup": true
+  },
+  "permissions": {
+    "teamManagement": ["MANAGE_GUILD"],
+    "warnings": ["MODERATE_MEMBERS"],
+    "announcements": ["MANAGE_MESSAGES"],
+    "tickets": ["MANAGE_CHANNELS"]
+  },
+  "settings": {
+    "maxTeamsPerGuild": 50,
+    "maxMembersPerTeam": 100,
+    "maxWarningsShow": 10,
+    "ticketCategoryName": "🎫 Support Tickets",
+    "autoDeleteTicketAfter": 5000,
+    "backupInterval": 3600000
+  }
+}

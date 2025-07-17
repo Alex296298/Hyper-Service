@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: discord-team-bot
+    env: node
+    plan: free
+    buildCommand: npm install && npm run deploy
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true
